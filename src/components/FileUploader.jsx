@@ -5,7 +5,7 @@ const FileUploader = () => {
     const file = event.target.files[0];
 
     if (file) {
-      const chunkSize = 2048; // Set your desired chunk size (in bytes) 1024 - 1kB
+      const chunkSize = 2048; // Set your desired chunk size (in bytes e.g 1024 === 1kB)
       const reader = new FileReader();
       let offset = 0;
 
